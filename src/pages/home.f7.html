@@ -1,0 +1,609 @@
+<template>
+  <div class="page" data-name="home">
+    
+    <div class="navbar navbar-large">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="link icon-only panel-open" data-panel="left">
+            <i class="icon f7-icons if-not-md">menu</i>
+            <i class="icon material-icons if-md">menu</i>
+          </a>
+        </div>
+        <div class="title sliding">My App</div>
+        <div class="right">
+          <a href="#" class="link icon-only panel-open" data-panel="right">
+            <i class="icon f7-icons if-not-md">menu</i>
+          </a>
+        </div>
+        <div class="title-large">
+          <div class="title-large-text">My App</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="toolbar toolbar-bottom">
+
+    </div>
+    
+    <div class="page-content">
+      <div class="list">
+        <ul>
+          <li>
+            <a class="item-link smart-select smart-select-init">
+              <select name="fruits">
+                <option value="apple" selected>Apple</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="pear">Pear</option>
+                <option value="orange">Orange</option>
+                <option value="melon">Melon</option>
+                <option value="peach">Peach</option>
+                <option value="banana">Banana</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Fruit</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select smart-select-init" data-open-in="popup" data-searchbar="true"
+              data-searchbar-placeholder="Search car">
+              <select name="car" multiple>
+                <optgroup label="Japanese">
+                  <option value="honda" selected>Honda</option>
+                  <option value="lexus">Lexus</option>
+                  <option value="mazda">Mazda</option>
+                  <option value="nissan">Nissan</option>
+                  <option value="toyota">Toyota</option>
+                </optgroup>
+                <optgroup label="German">
+                  <option value="audi" selected>Audi</option>
+                  <option value="bmw">BMW</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="vw">Volkswagen</option>
+                  <option value="volvo">Volvo</option>
+                </optgroup>
+                <optgroup label="American">
+                  <option value="cadillac">Cadillac</option>
+                  <option value="chrysler">Chrysler</option>
+                  <option value="dodge">Dodge</option>
+                  <option value="ford" selected>Ford</option>
+                </optgroup>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Car</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select smart-select-init" data-open-in="sheet">
+              <select name="mac-windows">
+                <option value="mac" selected>Mac</option>
+                <option value="windows">Windows</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Mac or Windows</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="item-link smart-select smart-select-init" data-open-in="popover">
+              <select name="superhero" multiple>
+                <option value="Batman" selected>Batman</option>
+                <option value="Superman">Superman</option>
+                <option value="Hulk">Hulk</option>
+                <option value="Spiderman">Spiderman</option>
+                <option value="Ironman">Ironman</option>
+                <option value="Thor">Thor</option>
+                <option value="Wonder Woman">Wonder Woman</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Super Hero</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="block-title">Select Date :</div>
+      <div class="list no-hairlines-md">
+        <ul>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="Select date" readonly="readonly" id="demo-calendar-date-format" />
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list no-hairlines-md">
+        <div class="block-header">Auto Complete Dropdown</div>
+        <ul>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Fruit</div>
+              <div class="item-input-wrap">
+                <input id="autocomplete-dropdown-placeholder" type="text" placeholder="Fruit" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="block-title">Super Heroes</div>
+      <div class="list simple-list">
+        <ul>
+          <li>
+            <span>Batman</span>
+            <label class="toggle toggle-init color-black">
+              <input type="checkbox" checked />
+              <span class="toggle-icon"></span>
+            </label>
+          </li>
+          <li>
+            <span>Aquaman</span>
+            <label class="toggle toggle-init color-blue">
+              <input type="checkbox" checked />
+              <span class="toggle-icon"></span>
+            </label>
+          </li>
+          <li>
+            <span>Superman</span>
+            <label class="toggle toggle-init color-red">
+              <input type="checkbox" checked />
+              <span class="toggle-icon"></span>
+            </label>
+          </li>
+          <li>
+            <span>Hulk</span>
+            <label class="toggle toggle-init color-green">
+              <input type="checkbox" />
+              <span class="toggle-icon"></span>
+            </label>
+          </li>
+          <li>
+            <span>Thor</span>
+            <label class="toggle toggle-init color-orange">
+              <input type="checkbox" checked />
+              <span class="toggle-icon"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="block block-strong">
+        <p class="row">
+          <button class="col button button-fill open-prompt">Enter Name</button>
+        </p>
+        <p>
+          <button class="button button-fill open-vertical">Vertical Buttons</button>
+        </p>
+        <p class="row">
+          <button class="col button button-fill open-preloader">Preloader</button>
+        </p>
+        <p class="row">
+          <button class="col button button-fill open-progress">Determined</button>
+          <button class="col button button-fill open-progress-infinite">Infinite</button>
+        </p>
+      </div>
+
+      <div class="block-title">Slide to view Super Heroes</div>
+      <div
+        data-pagination='{"el": ".swiper-pagination"}'
+        data-space-between="50"
+        class="swiper-container swiper-init demo-swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Iron Man</div>
+          <div class="swiper-slide">Spider Man</div>
+          <div class="swiper-slide">Captain America</div>
+          <div class="swiper-slide">Thor</div>
+          <div class="swiper-slide">Hulk</div>
+          <div class="swiper-slide">Doctor strange</div>
+          <div class="swiper-slide">Bat Man</div>
+          <div class="swiper-slide">Super Man</div>
+          <div class="swiper-slide">Aqua Man</div>
+          <div class="swiper-slide">Wonder Women</div>
+        </div>
+      </div>
+
+      <div class="toolbar messagebar">
+        <div class="toolbar-inner">
+          <div class="messagebar-area">
+            <textarea class="resizable" placeholder="Message"></textarea>
+          </div>
+          <a class="link send-link" href="#" @click=${sendMessage}>Send</a>
+        </div>
+      </div>
+      <div class="page-content messages-content">
+        <div class="messages">
+          <div class="messages-title"><b>Sunday, Feb 9,</b> 12:58</div>
+          <div class="message message-sent">
+            <div class="message-avatar"
+              style="background-image:url(https://cdn.framework7.io/placeholder/people-100x100-7.jpg)"></div>
+            <div class="message-content">
+              <div class="message-name">John Doe</div>
+              <div class="message-bubble">
+                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-received">
+            <div class="message-avatar"
+              style="background-image:url(https://cdn.framework7.io/placeholder/people-100x100-7.jpg)"></div>
+            <div class="message-content">
+              <div class="message-name">John Doe</div>
+              <div class="message-bubble">
+                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-sent">
+            <div class="message-content">
+              <div class="message-bubble">
+                <div class="message-text">Hi, Kate</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-sent">
+            <div class="message-content">
+              <div class="message-bubble">
+                <div class="message-text">How are you?</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-received">
+            <div class="message-avatar"
+              style="background-image:url(https://cdn.framework7.io/placeholder/people-100x100-9.jpg)"></div>
+            <div class="message-content">
+              <div class="message-name">Kate</div>
+              <div class="message-bubble">
+                <div class="message-text">Hi, I am good!</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-received">
+            <div class="message-avatar"
+              style="background-image:url(https://cdn.framework7.io/placeholder/people-100x100-7.jpg)"></div>
+            <div class="message-content">
+              <div class="message-name">Blue Ninja</div>
+              <div class="message-bubble">
+                <div class="message-text">Hi there, I am also fine, thanks! And how are you?</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-sent">
+            <div class="message-content">
+              <div class="message-bubble">
+                <div class="message-text">Hey, Blue Ninja! Glad to see you ;)</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-sent">
+            <div class="message-content">
+              <div class="message-bubble">
+                <div class="message-text">Hey, look, cutest kitten ever!</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-sent">
+            <div class="message-content">
+              <div class="message-bubble">
+                <div class="message-image">
+                  <img src="https://cdn.framework7.io/placeholder/cats-200x260-4.jpg"
+                    style="width:200px; height: 260px" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-received">
+            <div class="message-avatar"
+              style="background-image:url(https://cdn.framework7.io/placeholder/people-100x100-9.jpg)"></div>
+            <div class="message-content">
+              <div class="message-name">Kate</div>
+              <div class="message-bubble">
+                <div class="message-text">Nice!</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-received">
+            <div class="message-avatar"
+              style="background-image:url(https://cdn.framework7.io/placeholder/people-100x100-9.jpg)"></div>
+            <div class="message-content">
+              <div class="message-name">Kate</div>
+              <div class="message-bubble">
+                <div class="message-text">Like it very much!</div>
+              </div>
+            </div>
+          </div>
+          <div class="message message-received">
+            <div class="message-avatar"
+              style="background-image:url(https://cdn.framework7.io/placeholder/people-100x100-7.jpg)"></div>
+            <div class="message-content">
+              <div class="message-name">Blue Ninja</div>
+              <div class="message-bubble">
+                <div class="message-text">Awesome!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </div>
+</template>
+<style>
+    .demo-swiper .swiper-slide {
+    font-size: 25px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+  }
+
+  .demo-swiper .swiper-slide {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+
+  .demo-swiper {
+    margin: 0px 0 35px;
+    font-size: 18px;
+    height: 120px;
+  }
+
+  .demo-swiper.demo-swiper-auto .swiper-slide {
+    width: 85%;
+  }
+
+  .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+    width: 70%;
+  }
+
+  .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+    width: 30%;
+  }
+</style>
+<script>
+export default (props, { $, $f7, $on }) => {
+
+  const fruits = 'Apple Apricot Avocado Banana Melon Orange Peach Pear Pineapple'.split(' ');
+  let calendarDateFormat;
+  let autocompleteDropdownPlaceholder;
+  let messages;
+  let messagebar;
+
+  var responseInProgress = false;
+  var answers = [
+      'Yes!',
+      'No',
+      'Hm...',
+      'I am not sure',
+      'And what about you?',
+      'May be ;)',
+      'Lorem ipsum dolor sit amet, consectetur',
+      'What?',
+      'Are you sure?',
+      'Of course',
+      'Need to think about it',
+      'Amazing!!!'
+    ]
+    var people = [
+      {
+        name: 'Kate Johnson',
+        avatar: 'https://cdn.framework7.io/placeholder/people-100x100-9.jpg'
+      },
+      {
+        name: 'Blue Ninja',
+        avatar: 'https://cdn.framework7.io/placeholder/people-100x100-7.jpg'
+      }
+    ];
+
+  // Receive Message
+  const receiveMessage = () => {
+      responseInProgress = true;
+      setTimeout(function () {
+        // Get random answer and random person
+        var answer = answers[Math.floor(Math.random() * answers.length)];
+        var person = people[Math.floor(Math.random() * people.length)];
+
+        // Show typing indicator
+        messages.showTyping({
+          header: person.name + ' is typing',
+          avatar: person.avatar
+        });
+
+        setTimeout(function () {
+          // Add received dummy message
+          messages.addMessage({
+            text: answer,
+            type: 'received',
+            name: person.name,
+            avatar: person.avatar
+          });
+          // Hide typing indicator
+          messages.hideTyping();
+          responseInProgress = false;
+        }, 4000);
+      }, 1000);
+    }
+
+    // Send Message
+    const sendMessage = () => {
+      var text = messagebar.getValue().replace(/\n/g, '<br>').trim();
+      // return if empty message
+      if (!text.length) return;
+
+      // Clear area
+      messagebar.clear();
+
+      // Return focus to area
+      messagebar.focus();
+
+      // Add message to messages
+      messages.addMessage({
+        text: text,
+      });
+
+      if (responseInProgress) return;
+      // Receive dummy message
+      receiveMessage();
+    }
+
+  $on('pageInit', () => {
+    calendarDateFormat = $f7.calendar.create({
+      inputEl: '#demo-calendar-date-format',
+      dateFormat: { weekday: 'long', month: 'long', day: '2-digit', year: 'numeric' },
+    });
+
+    autocompleteDropdownPlaceholder = $f7.autocomplete.create({
+      
+      inputEl: '#autocomplete-dropdown-placeholder',
+      openIn: 'dropdown',
+      dropdownPlaceholderText: 'Try to type "Apple"',
+      source: function (query, render) {
+        var results = [];
+        if (query.length === 0) {
+          render(results);
+          return;
+        }
+         
+        for (var i = 0; i < fruits.length; i++) {
+          if (fruits[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(fruits[i]);
+        }
+          
+        render(results);
+      }
+    });
+
+    
+
+    messages = app.messages.create({
+        el: '.messages',
+
+        // First message rule
+        firstMessageRule: function (message, previousMessage, nextMessage) {
+          // Skip if title
+          if (message.isTitle) return false;
+          /* if:
+            - there is no previous message
+            - or previous message type (send/received) is different
+            - or previous message sender name is different
+          */
+          if (!previousMessage || previousMessage.type !== message.type || previousMessage.name !== message.name) return true;
+          return false;
+        },
+        // Last message rule
+        lastMessageRule: function (message, previousMessage, nextMessage) {
+          // Skip if title
+          if (message.isTitle) return false;
+          /* if:
+            - there is no next message
+            - or next message type (send/received) is different
+            - or next message sender name is different
+          */
+          if (!nextMessage || nextMessage.type !== message.type || nextMessage.name !== message.name) return true;
+          return false;
+        },
+        // Last message rule
+        tailMessageRule: function (message, previousMessage, nextMessage) {
+          // Skip if title
+          if (message.isTitle) return false;
+          /* if (basically same as lastMessageRule):
+          - there is no next message
+          - or next message type (send/received) is different
+          - or next message sender name is different
+        */
+          if (!nextMessage || nextMessage.type !== message.type || nextMessage.name !== message.name) return true;
+          return false;
+        }
+      });
+
+      // Init Messagebar
+      messagebar = app.messagebar.create({
+        el: '.messagebar'
+      });
+
+    $('.open-prompt').on('click', function () {
+        $f7.dialog.prompt('What is your name?', function (name) {
+          $f7.dialog.confirm('Are you sure that your name is ' + name + '?', function () {
+            $f7.dialog.alert('Ok, your name is ' + name);
+          });
+        });
+    });
+
+    $('.open-vertical').on('click', function () {
+        $f7.dialog.create({
+          title: 'Vertical Buttons',
+          text: 'Dialog with vertical buttons',
+          buttons: [
+            {
+              text: 'Button 1',
+            },
+            {
+              text: 'Button 2',
+            },
+            {
+              text: 'Button 3',
+            },
+          ],
+          verticalButtons: true,
+        }).open();
+    });
+
+    $('.open-preloader').on('click', function () {
+        $f7.dialog.preloader();
+        setTimeout(function () {
+          $f7.dialog.close();
+        }, 3000);
+    });
+
+          
+    $('.open-progress').on('click', function () {
+        var progress = 0;
+        var dialog = $f7.dialog.progress('Loading assets', progress);
+        dialog.setText('Image 1 of 10');
+        var interval = setInterval(function () {
+          progress += 10;
+          dialog.setProgress(progress);
+          dialog.setText('Image ' + ((progress) / 10) + ' of 10');
+          if (progress === 100) {
+            clearInterval(interval);
+            dialog.close();
+          }
+        }, 300)
+    });
+
+    
+    $('.open-progress-infinite').on('click', function () {
+        $f7.dialog.progress();
+        setTimeout(function () {
+          $f7.dialog.close();
+        }, 3000);
+    });
+    
+
+    
+
+
+
+  });
+  return $render;
+}
+</script>
